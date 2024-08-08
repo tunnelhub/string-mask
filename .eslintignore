@@ -1,0 +1,8 @@
+.yalc
+.vscode
+.github
+node_modules
+dist
+tests
+jest.config.ts
+jest.setup.ts
