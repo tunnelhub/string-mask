@@ -1,23 +1,16 @@
-#string-mask
-[![npm version](https://badge.fury.io/js/string-mask.svg)](http://badge.fury.io/js/string-mask)
-[![Bower version](https://badge.fury.io/bo/string-mask.svg)](http://badge.fury.io/bo/string-mask)
-[![Build Status](https://travis-ci.org/the-darc/string-mask.svg?branch=master)](https://travis-ci.org/the-darc/string-mask)
-[![Coverage Status](https://coveralls.io/repos/github/the-darc/string-mask/badge.svg?branch=master)](https://coveralls.io/github/the-darc/string-mask?branch=master)
+# @tunnelhub/string-mask
+[![npm version](https://badge.fury.io/js/@tunnelhub%2Fstring-mask.svg)](http://badge.fury.io/js/@tunnelhub%2Fstring-mask)
 
 A string formatter and validator based on masks.
+
+> **Note:** This is a fork of [js-system/string-mask](https://github.com/js-system/string-mask) with TypeScript support, modern ES modules, and Node.js 22+ compatibility.
 
 ## INSTALLATION
 
 **With npm:**
 
-```javascript
-npm install --save string-mask
-```
-
-**With bower:**
-
-```javascript
-bower install --save string-mask
+```bash
+npm install --save @tunnelhub/string-mask
 ```
 ## SPECIAL MASK CHARACTERS
 
@@ -141,16 +134,18 @@ var result = StringMask.process('some value string', 'some mask', optionsObject)
 We'd love for you to contribute to our source code! We just ask to: 
 
  - Write tests for the new feature or bug fix that you are solving
- - Ensure all tests pass before send the pull-request (Use: `$ gulp pre-push`)
+ - Ensure all tests pass before sending the pull-request (Use: `npm test`)
+ - Ensure code formatting is correct (Use: `npm run format:check`)
+ - Ensure linting passes (Use: `npm run lint:check`)
  - Use commit messages following the commit conventions of [angular.js Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit)
  - Pull requests will not be merged if:
-   - has not unit tests
+   - has no unit tests
    - reduce the code coverage
-   - not passing in the `$gulp pre-push` task
+   - not passing the test, format, or lint checks
 
 ## LICENSE
 
-Copyright (c) 2016 Daniel Campos
+Copyright (c) 2025 TunnelHub
 
 Licensed under the MIT license.
   
